@@ -13,7 +13,7 @@ func main() {
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 
-	e.GET("/", handler.hello)
+	e.GET("/", handler.Hello)
 
 	e.Logger.Fatal(e.Start(":1323"))
 }
